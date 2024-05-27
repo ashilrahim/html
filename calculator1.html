@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    width: 340px;
+    background-color: #014e4daf;
+    border-radius: 8px;
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.display {
+    background-color: #01882c;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #161515;
+    color: rgb(182, 177, 177);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.c {
+    background-color: rgba(119, 8, 8, 0.868);
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.large {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="btn c">C</button>
+            <button class="btn c" ><=</button>
+            <button class="btn" >/</button>
+            <button class="btn" >*</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">-</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn large">+</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn zero">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

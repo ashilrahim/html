@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+	width: 340px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#container {
+	width: 200px;
+	padding: 8px 8px 20px 8px;
+	margin: 20px auto;
+	background-color: #0c779a;
+	border: 2px solid green;
+	box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+}
+
+#display {
+	display: block;
+	margin: 15px auto;
+	height: 42px;
+	width: 174px;
+	padding: 0 10px;
+	border-radius: 4px;
+	border: 2px solid #C1C1C1;
+	background-color: #146617;
+	box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+	font-size: 28px;
+}
+.buttons {
+	grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.add {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.mathButtons {
+	margin: 2px 2px 6px 2px;
+	color: #fbf7f7;
+    background-color: #3c3939;
+	border: 2px solid rgb(30, 29, 29);
+	box-shadow: 5px 8px 2px #030303,
+}
+
+.digits {
+	margin: 2px 2px 6px 2px;
+	color: #fbf7f7;
+    background-color: #373535;
+	border: 2px solid rgb(30, 29, 29);
+	box-shadow: 5px 8px 2px #030303,
+}
+#clearButton {
+	color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border: 2px solid red;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}
