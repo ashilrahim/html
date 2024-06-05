@@ -1,7 +1,15 @@
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
+    
 }
+body {
+    height: 1000px;
+    background-repeat: no-repeat;
+    background: #466368;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
 
 .nav {
     display: flex;
@@ -85,6 +93,7 @@ input[type=text] {
 
 .dropdown {
     padding-right: 10px;
+    border: 0px solid #6a10e9;
 }
 
 

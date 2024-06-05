@@ -1,0 +1,92 @@
+body {
+    margin: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+}
+@keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    25% {
+      left: 244px;
+      top: 100px;
+      border-radius: 0%;
+    }
+    50% {
+      left: 488px;
+      top: 0;
+    }
+
+    75% {
+        left: 732px;
+        top: 100px;
+      }
+    100% {
+        left: 0px;
+        top: 100px;
+      }
+  }
+  
+  .ball {
+      height: 200px;
+      position: absolute;
+      width: 200px;
+      color: blue;
+      border-radius: 50%;
+      border: 1px solid blue;
+      background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  }
+  .ball {
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    25% {
+      left: 244px;
+      top: 100px;
+      border-radius: 0%;
+    }
+    50% {
+      left: 488px;
+      top: 0;
+    }
+
+    75% {
+        left: 732px;
+        top: 100px;
+      }
+    100% {
+        left: 0px;
+        top: 100px;
+      }
+  }
+  
+  .ball1 {
+      margin-right: 40px;
+      height: 200px;
+      position: absolute;
+      width: 200px;
+      color: blue;
+      border-radius: 50%;
+      border: 1px solid blue;
+      background-image: linear-gradient(to top, #346d25 0%, #3c6cbf 100%);
+  }
+  .ball1 {
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
