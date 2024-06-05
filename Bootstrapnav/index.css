@@ -1,0 +1,146 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #6a10e9;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    opacity: 80%;
+}
+
+a:hover{
+    color: white;
+    opacity: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo svg {
+    margin-left: 10px;
+}
+
+.nav form {
+    margin-left: 10%;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #6a10e9;
+    background-image: url('search.svg');
+    background-position: 15px 13px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    align-items: center;
+}
+
+::placeholder {
+    color: silver;
+}
+
+.icons {
+    padding-left: 315px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icons svg {
+    padding: 10px;
+    opacity: 70%;
+}
+
+.vl {
+    border-left: 1px solid;
+    color: white;
+    opacity: 50%;
+    height: 30px;
+    align-items: center;
+}
+
+.dropdown {
+    padding-right: 10px;
+}
+
+
+option {
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+
+#page {
+    color: white;
+    font-size: 16px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    opacity: 80%;
+    padding-left: 10px;
+    width: 70px;
+}
+
+#page:hover {
+    color: white;
+    opacity: 100%;
+}
+.theme ul {
+    position: relative;
+    display: inline-block;
+}
+.dropdown1 {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    padding: 8px 10px;
+    z-index: 1;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #2a2727;
+    border-radius: 10px;
+}
+.theme ul {
+    right: 18px;
+}
+.dropdown1 a {
+    color: rgb(207, 199, 199);
+}
+.theme:hover .dropdown1{
+    display: block;
+    margin-top: 20px;
+}
+.theme:hover .dropdown1 a {
+    background-color: #6a10e9;
+    
+}
+.d-block {
+    transition: 1s;
+}
+.d-block:hover {
+   transform: rotate(-10deg);
+} 
+
