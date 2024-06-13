@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
     margin: 100%;
     box-sizing: border-box;
@@ -73,7 +78,7 @@ body {
   }
   
   .ball1 {
-      margin-right: 40px;
+      
       height: 200px;
       position: absolute;
       width: 200px;
