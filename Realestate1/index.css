@@ -20,6 +20,10 @@
     background-color: black;
     color: white;
 }
+.btn-sign-up:hover {
+    background-color: #333;
+    color: white;
+}
 .hero-section {
     position: relative;
     text-align: center;
